@@ -1,18 +1,22 @@
 # Documentation \(English\)
 
-### USED ABBRIVIATIONS 
+### USED ABBRIVIATIONS
 
 DIC - Tax identification number
 
 DIC pověřujícího - Appointing Tax identification number, special case when merchant is selling items that belong to other Tax payer.
 
-Official government documentation for protocol: http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1\_EN.pdf
+Official government documentation for protocol: [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1\\_EN.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1\_EN.pdf)
 
-### REQUIREMENTS
 
-- .NET 4.5 and higher is required
 
-### ACTIVATION OF MODULE LICENSE
+### REQUIREMENTS
+
+* .NET 4.5 and higher is required
+
+
+
+### ACTIVATION OF MODULE LICENSE
 
 1\) Fill license information to file eet-licence.txt
 
@@ -20,7 +24,9 @@ Official government documentation for protocol: http://www.etrzby.cz/assets/cs/p
 
 3\) Start program \(exe\) and verify that license was successfuly verified. If license was successfuly registered, eetout.txt contains error 1005. This means that license was succesfully registered and receipt in eetin.txt was omitted and not sent.
 
-### USING EET MODULE FROM OTHER SOFTWARE
+
+
+### USING EET MODULE FROM OTHER SOFTWARE
 
 After starting eet.exe input data are loaded from eetin.txt
 
@@ -32,23 +38,29 @@ In software environments which can not detect whether eet.exe is still running, 
 
 When pracuji.exe does not exists, EET communication output was created.
 
-### PLAYGROUND \(EET TEST\) ENVIRONMENT
 
-- DIČ of sender has to be CZ1212121218 which belongs to digital certificate 01000003.p12
 
-- Playground can be used only if 1. row of eet.txt is set to true
+### PLAYGROUND \(EET TEST\) ENVIRONMENT
 
-- Test certificates are available here http://www.etrzby.cz/cs/technicka-specifikace\)
+* DIČ of sender has to be CZ1212121218 which belongs to digital certificate 01000003.p12
 
-### IMPORTANT NOTICE OF INPUT DATA
+* Playground can be used only if 1. row of eet.txt is set to true
 
-- Number fileds have to be filled with 0 even though they are empty
+* Test certificates are available here [http://www.etrzby.cz/cs/technicka-specifikace\](http://www.etrzby.cz/cs/technicka-specifikace\)\)
 
-- Number of input rows has to be exactly the same as below
 
-### LICENSE eet-licence.txt
 
-1. license 
+### IMPORTANT NOTICE OF INPUT DATA
+
+* Number fileds have to be filled with 0 even though they are empty
+
+* Number of input rows has to be exactly the same as below
+
+
+
+### LICENSE eet-licence.txt
+
+1. license
 
 2. ICO that bought the license \(SW company\)
 
@@ -72,51 +84,49 @@ When pracuji.exe does not exists, EET communication output was created.
 
 2. overeni - test rezim BOOLEAN, TRUE = verification regime \(special regime that only validates date, if used, it does not returns FIK\), FALSE = used for production, officially records sales
 
- 
-
 \(sales record\)
 
-3. dic\_popl - DIC of merchant, STRING 12
+1. dic\_popl - DIC of merchant, STRING 12
 
-4. dic\_poverujiciho - DIC pověřujícího merchant, STRING 12
+2. dic\_poverujiciho - DIC pověřujícího merchant, STRING 12
 
-5. id\_provoz - ID store, INT 1-999999
+3. id\_provoz - ID store, INT 1-999999
 
-6. id\_pokl - ID POS, STRING 20
+4. id\_pokl - ID POS, STRING 20
 
-7. porad\_cis - receipt number, STRING 20
+5. porad\_cis - receipt number, STRING 20
 
-8. dat\_trzba - date of sale e.g. 2016-11-09T04:2528+01:00, DATE in format ISO8601
+6. dat\_trzba - date of sale e.g. 2016-11-09T04:2528+01:00, DATE in format ISO8601
 
-9. celk\_trzba - total sale record, DECIMAL
+7. celk\_trzba - total sale record, DECIMAL
 
-10. zakl\_nepodl\_dph - Total amount for performance exempted from VAT, other performance, DECIMAL
+8. zakl\_nepodl\_dph - Total amount for performance exempted from VAT, other performance, DECIMAL
 
-11. zakl\_dan1 - Total tax base - basic VAT rate, DECIMAL
+9. zakl\_dan1 - Total tax base - basic VAT rate, DECIMAL
 
-12. dan1 - Total VAT - basic VAT rate, DECIMAL
+10. dan1 - Total VAT - basic VAT rate, DECIMAL
 
-13. zakl\_dan2 - Total tax base - first reduced VAT rate, DECIMAL
+11. zakl\_dan2 - Total tax base - first reduced VAT rate, DECIMAL
 
-14. dan2 - Total VAT - first reduced VAT rate, DECIMAL
+12. dan2 - Total VAT - first reduced VAT rate, DECIMAL
 
-15. zakl\_dan3 - Total tax base - second reduced VAT rate, DECIMAL
+13. zakl\_dan3 - Total tax base - second reduced VAT rate, DECIMAL
 
-16. dan3 - Total VAT - second reduced VAT rate, DECIMAL
+14. dan3 - Total VAT - second reduced VAT rate, DECIMAL
 
-17. cest\_sluz -Total amount under the VAT scheme for travel service, DECIMAL
+15. cest\_sluz -Total amount under the VAT scheme for travel service, DECIMAL
 
-18. pouzit\_zboz1 - Total amount under the VAT scheme for the sale of used goods - basic VAT rate, DECIMAL
+16. pouzit\_zboz1 - Total amount under the VAT scheme for the sale of used goods - basic VAT rate, DECIMAL
 
-19. pouzit\_zboz2 - Total amount under the VAT scheme for the sale of used goods - first reduced VAT rate, DECIMAL
+17. pouzit\_zboz2 - Total amount under the VAT scheme for the sale of used goods - first reduced VAT rate, DECIMAL
 
-20. pouzit\_zboz3 - Total amount under the VAT scheme for the sale of used goods - second reduced VAT rate, DECIMAL
+18. pouzit\_zboz3 - Total amount under the VAT scheme for the sale of used goods - second reduced VAT rate, DECIMAL
 
-21. urceno\_cerp\_zuct -  Total amount of payments intended for subsequent drawing or settlement, DECIMAL
+19. urceno\_cerp\_zuct -  Total amount of payments intended for subsequent drawing or settlement, DECIMAL
 
-22. cerp\_zuct - Total amount of payments which are payments subsequently drawn or settled, DECIMAL
+20. cerp\_zuct - Total amount of payments which are payments subsequently drawn or settled, DECIMAL
 
-23. rezim - Sale regime \(FALSE - regular regime\), \(true - simplified regime which requires permit from Tax Office, allows customer to send unsent records up to 5 days\) 
+21. rezim - Sale regime \(FALSE - regular regime\), \(true - simplified regime which requires permit from Tax Office, allows customer to send unsent records up to 5 days\)
 
 ### OUTPUT eetout.txt
 
@@ -132,11 +142,11 @@ When pracuji.exe does not exists, EET communication output was created.
 
 6. Error code - see errors
 
-### ERRORS
+### 
 
-- \(EET server errors\) see http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1.pdf  
+ERRORS
 
-
+* \(EET server errors\) see [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1.pdf)  
 
 -1 - Docasna technicka chyba zpracovani – odeslete prosim datovou zpravu pozdeji \(system unavailable\)
 
@@ -166,8 +176,6 @@ When pracuji.exe does not exists, EET communication output was created.
 
 \)\*\*\* Podle situace je možné na tuto chybu reagovat i navrácením technické chyby, např. tzv. SOAP fault, nebo dokonce ignorováním datové zprávy, pokud je podezření, že se jedná o kybernetický útok \(This message can occure in format e.g. SOAP fault, or request can be completely ignore when suspicious cyber attacks occur\)
 
-
-
 Seznam chyb \(ze zpracovani EET modul\)
 
 1001 - Internet není k dispozici \(internet unavailable\)
@@ -186,9 +194,7 @@ Seznam chyb \(ze zpracovani EET modul\)
 
 1008 - Odpověď je null \(EET response is null\)
 
-
-
 ### KREDIT
 
-Module uses library https://github.com/l-ra/openeet
+Module uses library [https://github.com/l-ra/openeet](https://github.com/l-ra/openeet)
 
