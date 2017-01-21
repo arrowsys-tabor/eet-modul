@@ -128,9 +128,7 @@ When pracuji.exe does not exists, EET communication output was created.
 
 6. Error code - see errors
 
-### 
-
-ERRORS
+### ERRORS
 
 * \(EET server errors\) see [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1.pdf)  
 
