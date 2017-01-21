@@ -2,13 +2,13 @@
 
 ### POŽADAVKY
 
-- .NET 4.5 a vyšší
+* .NET 4.5 a vyšší
 
 ### POSTUP AKTIVACE LICENCE
 
 1\) Vyplnit licenční údaje v souboru eet-licence.txt
 
-2\) Nastavit konfigurační soubor 
+2\) Nastavit konfigurační soubor
 
 3\) Spustit program a ověřit zda byla licence řádně zaregistrována
 
@@ -24,17 +24,19 @@ V programových prostředích, které neumožnují sledování procesů je možn
 
 pro zjištění zdali proces odesílání již skončil.
 
-### INFORMACE PRO PLAYGROUND 
+### INFORMACE PRO PLAYGROUND
 
-- DIČ odesílatele musí být CZ1212121218 na které je vystaven certifikát 01000003.p12
+* DIČ odesílatele musí být CZ1212121218 na které je vystaven certifikát 01000003.p12
 
-- Do Playground lze odesílat pouze pokud je 1. řádek eet.txt nastaven na true
+* Do Playground lze odesílat pouze pokud je 1. řádek eet.txt nastaven na true
 
-### DŮLEŽITÉ 
+### 
 
-- Číselné položky musejí být vyplněné i pokud obsahují 0
+DŮLEŽITÉ
 
-- Počet řádků vstupních souborů musí být zachován
+* Číselné položky musejí být vyplněné i pokud obsahují 0
+
+* Počet řádků vstupních souborů musí být zachován
 
 LICENCE eet-licence.txt
 
@@ -46,7 +48,9 @@ LICENCE eet-licence.txt
 
 4. radek pro overeni \(nevyplnuje se\)
 
-### KONFIGURACE eet.txt
+### 
+
+KONFIGURACE eet.txt
 
 1. debug mode - true = neprodukční prostředí, lze použít pouze certifikáty pro playground, false = produkční prostředí nastavte vždy na false, lze použít pouze ostré certifikáty
 
@@ -60,17 +64,13 @@ LICENCE eet-licence.txt
 
 1. prvni\_zaslani - BOOLEAN, TRUE = prvni zaslani, FALSE = opetovne
 
-2. overeni - test rezim BOOLEAN, TRUE = overovaci rezim \(vraci z MFCR misto FIK zpravu zdali jsou parametry OK evidenci trzev\), FALSE = evidovat trzbu
-
- 
-
-\(udaje o samotne trzbe\)
+2. overeni - test rezim BOOLEAN, TRUE = overovaci rezim \(vraci z MFCR misto FIK zpravu zdali jsou parametry OK evidenci trzev\), FALSE = evidovat trzbu \(udaje o samotne trzbe\)
 
 3. dic\_popl - DIC od koho tržba plyne STRING 12
 
 4. dic\_poverujiciho - DIC povereneho odesilatele trzby STRING 12
 
-5. id\_provoz - ID provozovny INT 1-999999
+5. id\_provoz - ID provozovny INT 1-99999
 
 6. id\_pokl - ID pokladny STRING 20
 
@@ -108,15 +108,17 @@ LICENCE eet-licence.txt
 
 23. rezim - FALSE - běžný režim, true - zjednodušený režim
 
-###  VYSLEDEK eetout.txt
+### 
 
-1. porad\_cisl - zpetna kontrola odeslané učtenky
+VYSLEDEK eetout.txt
+
+1. porad\_cisl - zpetna kontrola odeslané učtenky
 
 2. PKP - offline zprava \(tiskne se pokud neni FIK\)
 
 3. BKP - offline kod \(tiskne se vzdy\)
 
-4. FIK - online kod \(tiskne se vzdy pokud je k dispozici\) V ověřovacím režimu obashuje zprávu ze serveru MFČR zdali zasílané parametry jsou jsou validní. 
+4. FIK - online kod \(tiskne se vzdy pokud je k dispozici\) V ověřovacím režimu obashuje zprávu ze serveru MFČR zdali zasílané parametry jsou jsou validní.
 
 5. UUID - unikátní kód návratové zprávy ze serveru EET
 
@@ -124,9 +126,7 @@ LICENCE eet-licence.txt
 
 ### SEZNAM CHYB
 
-- \(z odpovedi EET serveru\) viz http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1.pdf  
-
-
+* \(z odpovedi EET serveru\) viz [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1.pdf)  
 
 -1 - Docasna technicka chyba zpracovani – odeslete prosim datovou zpravu pozdeji
 
@@ -156,8 +156,6 @@ LICENCE eet-licence.txt
 
 \)\*\*\* Podle situace je možné na tuto chybu reagovat i navrácením technické chyby, např. tzv. SOAP fault, nebo dokonce ignorováním datové zprávy, pokud je podezření, že se jedná o kybernetický útok
 
-
-
 Seznam chyb \(ze zpracovani EET modul\)
 
 1001 - Internet není k dispozici
@@ -176,9 +174,7 @@ Seznam chyb \(ze zpracovani EET modul\)
 
 1008 - Odpověď je null
 
-
-
 ### KREDIT
 
-Aplikace vyuziva knihovnu https://github.com/l-ra/openeet
+Aplikace vyuziva knihovnu [https://github.com/l-ra/openeet](https://github.com/l-ra/openeet)
 
