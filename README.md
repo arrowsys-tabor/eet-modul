@@ -30,8 +30,6 @@ pro zjištění zdali proces odesílání již skončil.
 
 * Do Playground lze odesílat pouze pokud je 1. řádek eet.txt nastaven na true
 
-### 
-
 DŮLEŽITÉ
 
 * Číselné položky musejí být vyplněné i pokud obsahují 0
@@ -44,19 +42,17 @@ LICENCE eet-licence.txt
 
 2. ICO na ktere je licence registrovana
 
-3. Číslo Stanice
+3. Číslo Stanice - konstanta 1. Pokud se instalujte na další stanici pod stejným IČ, je zapotřebí **číslo zvýšit**.
 
 4. radek pro overeni \(nevyplnuje se\)
 
-### 
-
-KONFIGURACE eet.txt
+### KONFIGURACE eet.txt
 
 1. debug mode - true = neprodukční prostředí, lze použít pouze certifikáty pro playground, false = produkční prostředí nastavte vždy na false, lze použít pouze ostré certifikáty
 
 2. timeout MS - minimum 2000, casovy limit pro cekani na odpoved ze serveru EET.
 
-3. certificate path - systémová cesta k elektronickému certifikátu, ve zkušební verzi je dodáván od MFČR soubor 01000003.p12 s heslem "eet"
+3. certificate path - systémová cesta k elektronickému certifikátu, ve zkušební verzi je dodáván od MFČR soubor 01000003.p12 s heslem "eet". Cesta nesmí obsahovat diakritiku, speciální znaky a podtržitko.
 
 4. certificate password
 
