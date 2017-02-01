@@ -30,13 +30,13 @@ pro zjištění zdali proces odesílání již skončil.
 
 * Do Playground lze odesílat pouze pokud je 1. řádek eet.txt nastaven na true
 
-DŮLEŽITÉ
+**DŮLEŽITÉ**
 
 * Číselné položky musejí být vyplněné i pokud obsahují 0
 
 * Počet řádků vstupních souborů musí být zachován
 
-LICENCE eet-licence.txt
+**LICENCE eet-licence.txt**
 
 1. cislo licence
 
@@ -104,9 +104,9 @@ LICENCE eet-licence.txt
 
 23. rezim - FALSE - běžný režim, true - zjednodušený režim
 
-### 
 
-VYSLEDEK eetout.txt
+
+**VYSLEDEK eetout.txt**
 
 1. porad\_cisl - zpetna kontrola odeslané učtenky
 
