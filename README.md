@@ -3,6 +3,7 @@
 ### POŽADAVKY
 
 * .NET 4.5 a vyšší
+* Sada zkušební EET certifikátu je ke stažení na http://www.etrzby.cz/assets/cs/prilohy/EET\_CA1\_Playground\_v1.zip
 
 ### POSTUP AKTIVACE LICENCE
 
@@ -103,8 +104,6 @@ pro zjištění zdali proces odesílání již skončil.
 22. cerp\_zuct - celková částka plateb které jsou následným čerpáním nebo zúčtováním platby
 
 23. rezim - FALSE - běžný režim, true - zjednodušený režim
-
-
 
 **VYSLEDEK eetout.txt**
 
