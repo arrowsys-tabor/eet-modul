@@ -3,7 +3,7 @@
 ### POŽADAVKY
 
 * .NET 4.5 a vyšší
-* Sada zkušební EET certifikátu je ke stažení na http://www.etrzby.cz/assets/cs/prilohy/EET\_CA1\_Playground\_v1.zip
+* Sada zkušební EET certifikátu je ke stažení na [http://www.etrzby.cz/assets/cs/prilohy/EET\\_CA1\\_Playground\\_v1.zip](http://www.etrzby.cz/assets/cs/prilohy/EET\_CA1\_Playground\_v1.zip) popřípadě http://www.etrzby.cz/cs/technicka-specifikace
 
 ### POSTUP AKTIVACE LICENCE
 
