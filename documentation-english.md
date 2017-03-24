@@ -1,12 +1,14 @@
 # Documentation \(English\)
 
+Most up to date documentation is in Czech.
+
 ### USED ABBRIVIATIONS
 
 DIC - Tax identification number
 
 DIC pověřujícího - Appointing Tax identification number, special case when merchant is selling items that belong to other Tax payer.
 
-Official government documentation for protocol: [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1\\_EN.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1\_EN.pdf)
+Official government documentation for protocol: [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1\\_EN.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET_popis_rozhrani_v3.1.1_EN.pdf)
 
 ### REQUIREMENTS
 
@@ -38,7 +40,7 @@ When pracuji.exe does not exists, EET communication output was created.
 
 * Playground can be used only if 1. row of eet.txt is set to true
 
-* Test certificates are available here [http://www.etrzby.cz/cs/technicka-specifikace\](http://www.etrzby.cz/cs/technicka-specifikace\)\)
+* Test certificates are available here [http://www.etrzby.cz/cs/technicka-specifikace\](http://www.etrzby.cz/cs/technicka-specifikace%29\)
 
 ### IMPORTANT NOTICE OF INPUT DATA
 
@@ -130,7 +132,7 @@ When pracuji.exe does not exists, EET communication output was created.
 
 ### ERRORS
 
-* \(EET server errors\) see [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET\_popis\_rozhrani\_v3.1.1.pdf)  
+* \(EET server errors\) see [http://www.etrzby.cz/assets/cs/prilohy/EET\\_popis\\_rozhrani\\_v3.1.1.pdf](http://www.etrzby.cz/assets/cs/prilohy/EET_popis_rozhrani_v3.1.1.pdf)  
 
 -1 - Docasna technicka chyba zpracovani – odeslete prosim datovou zpravu pozdeji \(system unavailable\)
 
