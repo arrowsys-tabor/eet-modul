@@ -1,4 +1,4 @@
-### vzor eetout.txt - neúspěšné odeslání
+### Vzor eetout.txt - neúspěšné odeslání
 
 100905
 
