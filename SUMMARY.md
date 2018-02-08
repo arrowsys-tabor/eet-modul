@@ -7,6 +7,7 @@
 * [Verze](verze.md)
 * [Nastavení firewall](nastaveni-firewall.md)
 * [Systémové nastavení](systemove-nastaveni.md)
+* [vzor eet.txt](vzor-eettxt.md)
 
 ## Methods
 
