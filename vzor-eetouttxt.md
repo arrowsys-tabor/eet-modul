@@ -1,4 +1,4 @@
-### Vzor eetout.txt - neúspěšné odeslání
+### vzor eetout.txt - neúspěšné odeslání
 
 100905
 
@@ -6,9 +6,9 @@ fHjNarnEMUQe89wjYhfUsFXe/opwtMHhYkxD6voFJf6BBr9KNyWuBdo0y8ftnIgyiUk0890rNvekGNpK
 
 1F1E9C28-4172C6FD-9EA7C7A5-25E8FB38-7073A338
 
-**\(prázdná řádek\)**
+**\(prázdný řádek\)**
 
-**\(prázdná řádek\)**
+**\(prázdný řádek\)**
 
 1001 - Internet není k dispozici
 
